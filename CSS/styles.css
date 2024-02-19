@@ -1,0 +1,208 @@
+html {
+    font: bold small-caps 20px Arial, sans-serif;
+}
+
+h1, h2 {
+    font-variant: small-caps;
+    text-align: center;
+    color: #791f1f;
+}
+
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5em; 
+}
+
+q {
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1.5em; 
+}
+
+footer p {
+    font-size: 1.5em; 
+    text-align: center;
+}
+
+
+/*Heigt*/
+body {
+    width: 80%;
+    max-width: 960px;
+}
+
+.img-class {
+    width: 100%;
+    height: auto;
+}
+
+.figure-class {
+    width: 80%;
+    height: auto;
+}
+
+iframe, video {
+    width: 80%;
+}
+
+
+/*Box Model*/
+
+body {
+    padding: 1em; 
+    margin: 0 auto;
+}
+
+header, footer {
+    text-align: center;
+}
+
+.section-class {
+    text-align: center;
+    padding: 1em;
+}
+
+#bio-blockquote {
+    text-align: left;
+}
+
+.img-class {
+    padding: 0.5em;
+}
+
+.figure-class {
+    padding: 0.5em;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#quote-q {
+    padding: 1em;
+}
+
+iframe, video {
+    padding: 0.5em;
+}
+
+
+/*Boarder and Box Shadow*/
+header, footer {
+    border: 2px solid #4d0f0f; 
+}
+
+.img-class {
+    border-radius: 30px;
+}
+
+#figure-relative, #figure-absolute {
+    border: 2px solid rgb(138, 0, 0);
+    border-radius: 30px;
+}
+
+iframe, video {
+    border: 2px solid #00F;
+    border-radius: 30px;
+}
+
+#quote-q {
+    border: 2px solid #00F;
+    box-shadow: 5px 5px 5px rgb(0, 0, 20);
+}
+
+
+/*Colour*/
+
+
+#figcaption-relative {
+    color: #9b0505; 
+}
+
+#figcaption-absolute {
+    color: #00ff00; /* Match border color */
+}
+
+h1, h2 {
+    color: blue; /* Named color */
+}
+
+header, footer {
+    background: linear-gradient(to right, rgb(133, 0, 0), #000068); 
+
+.section-class {
+    background-color: hsla(120, 100%, 50%, 0.3); 
+}
+
+#figure-absolute {
+    background-color: hsla(240, 100%, 50%, 0.3); 
+}
+
+#figure-relative {
+    background-color: hsla(0, 100%, 50%, 0.3); 
+}
+
+
+section {
+    text-align: center;
+}
+
+blockquote {
+    border: 2px solid #080808; /* Border color */
+    background-color: #f2f2f2; /* Background color */
+    padding: 15px 20px; /* Adjust the padding for the box */
+    margin: 20px 0; /* Add margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+    width: 80%; /* Add box shadow */
+}
+
+p {
+    margin: 0; /* Remove default margin for paragraphs inside blockquote */
+}
+
+q {
+    font-style: italic;
+    font-family: cursive;
+}
+
+
+/* Center the heading in the header */
+header {
+    text-align: center;
+}
+
+/* Center the video section */
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section p {
+    padding: 0 40px; /* Adjust the values as needed */
+}
+
+.main-section-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text and inline elements */
+}
+
+#absolute-path-image img {
+    width: 50%; /* Adjust as needed */
+}
+
+#relative-path-image img {
+    width: 100%; /* Adjust as needed */
+    align-items: center;
+}
+
+/* Add more CSS styles for the layout, alignment, and design as per your requirements */
+section iframe{
+    border: 2px solid #770000; /* Border color */
+    background-color: #f2f2f2; /* Background color */
+    padding: 15px 20px; /* Adjust the padding for the box */
+    margin: 20px 0; /* Add margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+    width: 80%; /* Add box shadow */
+}
