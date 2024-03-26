@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Biography of a famous person">
+    <meta name="keywords" content="contact, famous person, J. Cole">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/normalise.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+    <main>
+        <form>
+            <h2>Contact Form</h2>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autofocus>
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="contact">Preferred Method of Contact:</label>
+                <select id="contact" name="contact" required>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="robot" name="robot" required>
+                <label for="robot">I am not a robot</label>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <aside>
+        <div class="aside-content">
+        <h2>FAQs</h2>
+        <table>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>consectetur adipiscing elit?</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</td>
+                <td>consectetur adipiscing elit?</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>consectetur adipiscing elit?</td>
+            </tr>
+            <!-- Add more FAQs as needed -->
+        </table>
+        <h2>Resources</h2>
+        <ul>
+    
+            <li><a href="https://twitter.com/JColeNC">Twitter</a></li>
+            <li><a href="https://www.instagram.com/realcoleworld/">Instagram</a></li>
+            <li><a href="https://www.snapchat.com/add/realcoleworld">Snapchat</a></li>
+            <!-- Add more resources as needed -->
+        </ul>
+        
+    </div>
+    </aside>
+</div>
+    <footer>
+        <p>&copy; 2024 Biography of a famous person</p>
+    </footer>
+</body>
+</html>

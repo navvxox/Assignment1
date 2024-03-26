@@ -1,7 +1,11 @@
 html {
     font: bold small-caps 20px Arial, sans-serif;
 }
-
+body, header, footer, main, aside {
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+}
 h1, h2 {
     font-variant: small-caps;
     text-align: center;
@@ -27,10 +31,10 @@ footer p {
 
 
 /*Heigt*/
-body {
+/* body {
     width: 80%;
     max-width: 960px;
-}
+} */
 
 .img-class {
     width: 100%;
@@ -127,7 +131,7 @@ h1, h2 {
 }
 
 header, footer {
-    background: linear-gradient(to right, rgb(133, 0, 0), #000068); 
+    background: linear-gradient(to right, rgb(133, 0, 0), #000068); }
 
 .section-class {
     background-color: hsla(120, 100%, 50%, 0.3); 
@@ -177,9 +181,7 @@ main section {
     align-items: center;
     flex-direction: column;
 }
-section p {
-    padding: 0 40px; /* Adjust the values as needed */
-}
+
 
 .main-section-figure {
     display: flex;
@@ -205,4 +207,286 @@ section iframe{
     margin: 20px 0; /* Add margin for spacing */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
     width: 80%; /* Add box shadow */
+}
+
+/* General Styles */
+html {
+    font: bold small-caps 20px Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-variant: small-caps;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around; /* Align items evenly */
+    list-style-type: none; /* Remove the default list style */
+    padding: 0; /* Remove default padding */
+}
+nav ul li {
+    flex: 1; /* Each list item takes equal space */
+    text-align: center; /* Center the text */
+}
+
+nav ul li a {
+    display: block; /* Make the links fill the entire list item */
+    padding: 1em ; /* Add padding for spacing */
+    text-decoration: none;
+    margin: 5px;
+    color: white; /* Adjust link color */
+    background-color: #791f1f; /* Adjust background color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+nav ul li a:hover {
+    background-color: #9b0505; /* Adjust background color on hover */
+}
+
+footer p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Main Section */
+/* Main Section */
+.container {
+    display: flex;
+    margin: 0 auto; /* Center the container horizontally */
+    /* max-width: 1200px; */
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    padding: 1em;
+}
+
+/* Aside Section */
+aside {
+    flex: 0 0 30%; /* Fixed width for the aside */
+    padding: 1em;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form h2 {
+    margin-bottom: 10px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: inline-block;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"], /* Adjust width for Date field */
+form input[type="color"] ,
+form select,
+form textarea {
+    width: calc(100% - 20px); /* Calculate the width of input fields */
+    padding: 10px; /* Adjust padding for form fields */
+    font-size: 16px;
+}
+
+
+form textarea {
+    height: 100px;
+}
+
+form input[type="submit"] {
+    width: 100%; /* Set width to cover the full line */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #791f1f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #9b0505;
+}
+
+/* Aside Section */
+
+aside h3 {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: #791f1f;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Add space between the form and the aside */
+aside {
+    /* margin: 30px; */
+    padding: 10px;
+}
+
+.aside-content table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+.aside-content th,
+.aside-content td {
+    border: 1px solid #791f1f; /* Add border to table cells */
+    padding: 8px; /* Add padding to table cells */
+}
+
+.aside-content th {
+    background-color: #f2f2f2; /* Add background color to table header */
+}
+
+.aside-content ul {
+    padding-left: 20px; /* Adjust padding for unordered list */
+}
+/* Add this CSS to your existing stylesheet */
+
+/* Flexbox layout for main sections */
+.left-right {
+    display: flex;
+}
+
+.biography-section {
+    flex: 1;
+}
+
+.image-section {
+    flex: 1;
+    padding-left: 20px; /* Adjust as needed for spacing */
+}
+.image-section img {
+    padding-top: 70px;
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image behaves properly within its container */
+    margin: 0 auto; /* Center the image horizontally */
+}
+/* Media Query for Laptop View */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 16px; /* Decrease font size for better readability */
+    }
+
+    /* Remove floats */
+    .left-right {
+        display: block; /* Change to block layout to stack elements vertically */
+    }
+    .image-section img {
+        padding-top: 0;
+ /* Center the image horizontally */
+    }
+
+    .biography-section, .image-section {
+        width: 100%; /* Adjust width to occupy full width */
+        padding: 0; /* Remove padding */
+    }
+
+    /* Adjust box model and alignment */
+    .main-section-figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-section-figure img {
+        max-width: 100%; /* Ensure image doesn't exceed its container's width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .biography-section {
+        padding-bottom: 20px; /* Add spacing between biography and image */
+    }
+}
+/* Media Query for Mobile View */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 14px; /* Decrease font size further for mobile devices */
+    }
+
+    /* Remove floats */
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    /* Adjust widths */
+    main {
+        width: 100%; /* Occupy full width */
+        padding: 0; /* Remove padding */
+    }
+
+    aside {
+        width: 100%; /* Occupy full width */
+        margin-top: 20px; /* Add margin for spacing */
+    }
+
+    .biography-section,
+    .image-section {
+        width: 100%; /* Occupy full width */
+        padding: 0; /* Remove padding */
+    }
+
+    /* Adjust box model and alignment */
+    .main-section-figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-section-figure img {
+        max-width: 100%; /* Ensure image doesn't exceed its container's width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .biography-section {
+        padding-bottom: 20px; /* Add spacing between biography and image */
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .biography-section p {
+        font-size: 14px; /* Adjust the font size for biography text */
+    }
+
+    .main-section-figure img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+        height:auto;
+        min-height: 300px;
+         /* Maintain aspect ratio */
+
+    }
+    
 }
